@@ -1,0 +1,219 @@
+echo Civil Engineering
+python3 utep_pubs_per_month.py "Mayra Chavez" 	 	     57195430732 $1 $2
+python3 utep_pubs_per_month.py "Daniel Rodriguez" 	     57191910111 $1 $2
+python3 utep_pubs_per_month.py "Soheil Nazarian" 	     56256974400 $1 $2
+python3 utep_pubs_per_month.py "Kelvin Cheu" 		     7003305158 $1 $2
+python3 utep_pubs_per_month.py "When-Wai Li" 		     8203643900 $1 $2
+python3 utep_pubs_per_month.py "Cesar Carrasco" 	     7004451930 $1 $2
+python3 utep_pubs_per_month.py "Rajib Mallick"               56211856500 $1 $2
+python3 utep_pubs_per_month.py "Carlos Ferregut" 	     6603850123 $1 $2
+python3 utep_pubs_per_month.py "Alex Mayer" 		     7201374620 $1 $2
+python3 utep_pubs_per_month.py "Vivik Tandon" 		     7006015509 $1 $2
+python3 utep_pubs_per_month.py "Reza Salehi" 		     56243098500 $1 $2
+python3 utep_pubs_per_month.py "Shane Walker" 		     57202150339 $1 $2
+python3 utep_pubs_per_month.py "Ivonne Santiago" 	     6602195318 $1 $2
+python3 utep_pubs_per_month.py "Jeff Weidner"		     34870989100 $1 $2
+python3 utep_pubs_per_month.py "Adeeba Raheem" 		     52964318900 $1 $2
+python3 utep_pubs_per_month.py "Ruimin Ke" 		     57189377767 $1 $2
+python3 utep_pubs_per_month.py "Imad Abdallah" 		     57204340029 $1 $2
+python3 utep_pubs_per_month.py "Raed Aldouri" 		     16318421700 $1 $2
+
+echo Computer Science
+python3 utep_pubs_per_month.py  "Ann Gates" 		     7006458577 $1 $2
+python3 utep_pubs_per_month.py  "Vladik Kreinovich"	     7005196824 $1 $2
+python3 utep_pubs_per_month.py  "Nigel Ward" 		     7102178443 $1 $2
+python3 utep_pubs_per_month.py  "Martine Ceberio" 	     8541971700 $1 $2
+python3 utep_pubs_per_month.py  "Olac Fuentes" 		     56240528900 $1 $2
+python3 utep_pubs_per_month.py  "Salamah Salamah"	     24315242600 $1 $2
+python3 utep_pubs_per_month.py  "Chris Kiekintveld" 	     6507343508 $1 $2
+python3 utep_pubs_per_month.py  "Luc Longpre" 		     6701527758 $1 $2
+python3 utep_pubs_per_month.py  "Eric Freudenthal" 	     23093561400 $1 $2
+python3 utep_pubs_per_month.py  "Yoonsik Cheon" 	     56265947700 $1 $2
+python3 utep_pubs_per_month.py  "Shirley Moore" 	     8707694300 $1 $2
+python3 utep_pubs_per_month.py  "Mahmud Hossain" 	     22634250500 $1 $2
+python3 utep_pubs_per_month.py  "Monika Akbar" 		     23979147700 $1 $2
+python3 utep_pubs_per_month.py  "Natalia Villanueva Rosales" 24345854100 $1 $2
+python3 utep_pubs_per_month.py  "Christoph Lauter" 	     22135362500 $1 $2
+python3 utep_pubs_per_month.py  "Deepak Tosh" 		     55220635700 $1 $2
+python3 utep_pubs_per_month.py  "Dan DeBlasio" 		     35104548000 $1 $2
+python3 utep_pubs_per_month.py  "Saied Niari" 		     57193916304 $1 $2
+python3 utep_pubs_per_month.py  "Palvi Aggarwal" 	     57188836477 $1 $2
+python3 utep_pubs_per_month.py  "Kuldeep Singh" 	     57965323700 $1 $2
+python3 utep_pubs_per_month.py  "Diego Aguirre" 	     57207857811 $1 $2
+python3 utep_pubs_per_month.py  "Oscar Mondragon" 	     7801580112 $1 $2
+python3 utep_pubs_per_month.py  "Daniel Mejia" 		     57203005619 $1 $2
+     
+echo Electrical and Computer Engineering
+python3 utep_pubs_per_month.py  "Irma Torres-Catanach" 	     57435716500 $1 $2
+python3 utep_pubs_per_month.py  "Ben Flores" 		     35607873200 $1 $2
+python3 utep_pubs_per_month.py  "Miguel Velez-Reyes"	     7003870108 $1 $2
+python3 utep_pubs_per_month.py  "Patricia Nava" 	     7003567339 $1 $2
+python3 utep_pubs_per_month.py  "David Zubia" 		     8536228800 $1 $2
+python3 utep_pubs_per_month.py  "Raymond Rumpf"		     6701625968 $1 $2
+python3 utep_pubs_per_month.py  "Michael McGarry" 	     7006361164 $1 $2
+python3 utep_pubs_per_month.py  "Sergio Cabrera" 	     7005181253 $1 $2
+python3 utep_pubs_per_month.py  "Paras Mandal" 		     7102223387 $1 $2
+python3 utep_pubs_per_month.py  "John Moya" 		     7102437938 $1 $2
+python3 utep_pubs_per_month.py  "Ricardo VonBorries" 	     6507790095 $1 $2
+python3 utep_pubs_per_month.py  "Mounika Errapotu" 	     57192114761 $1 $2
+python3 utep_pubs_per_month.py  "Chris Roberts"		     24466830100 $1 $2
+python3 utep_pubs_per_month.py  "Yuanrui Sang" 		     57195983311 $1 $2
+python3 utep_pubs_per_month.py  "Jaesung Lee" 		     57415953900 $1 $2
+python3 utep_pubs_per_month.py  "Shian Wang" 		     57205163994 $1 $2
+python3 utep_pubs_per_month.py  "Hector Erives-Contreras"    8243059600 $1 $2
+python3 utep_pubs_per_month.py  "Rodrigo Romero" 	     36620540800 $1 $2
+python3 utep_pubs_per_month.py  "Virgilio Gonzalez" 	     8609857000 $1 $2
+python3 utep_pubs_per_month.py  "Jesus Gutierrez"  	     57190584956 $1 $2
+
+echo Engineering Leadership and Education
+python3 utep_pubs_per_month.py  "Victor Garcia" 	     57190025625 $1 $2
+python3 utep_pubs_per_month.py  "Annalisa Peez" 	     57914703300 $1 $2
+python3 utep_pubs_per_month.py  "Joshua Green" 		     57195962309 $1 $2
+python3 utep_pubs_per_month.py  "Pedro Golding" 	     7004287436 $1 $2
+python3 utep_pubs_per_month.py  "Roger Gonzalez" 	     7403454891 $1 $2
+python3 utep_pubs_per_month.py  "David Novick" 		     7007104505 $1 $2
+python3 utep_pubs_per_month.py  "Meagan Kendall" 	     57189966163 $1 $2
+
+echo Industrial and System Engineering
+python3 utep_pubs_per_month.py  "Ivan Renteria" 	     57193208081 $1 $2
+python3 utep_pubs_per_month.py  "Hongglun Xu" 		     57204215521 $1 $2
+python3 utep_pubs_per_month.py  "Bill Tseng" 		     23393519800 $1 $2
+python3 utep_pubs_per_month.py  "Rene Contreras" 	     7007052518 $1 $2
+python3 utep_pubs_per_month.py  "Eric Smith" 		     56300656000 $1 $2
+python3 utep_pubs_per_month.py  "Priya Pennathur" 	     14822580800 $1 $2
+python3 utep_pubs_per_month.py  "Arun Pennathur" 	     35609744800 $1 $2
+python3 utep_pubs_per_month.py  "Abhilash Aditya" 	     57208861448 $1 $2
+
+echo Aerospace and Mechanical Engineering
+python3 utep_pubs_per_month.py  "Amit Lopes" 		     7201958464 $1 $2
+python3 utep_pubs_per_month.py  "MD Rahman" 	             55253758200 $1 $2
+python3 utep_pubs_per_month.py  "Sergio Luna" 		     24490642900 $1 $2
+python3 utep_pubs_per_month.py  "Ahsan Choudhuri" 	     7005062369 $1 $2
+python3 utep_pubs_per_month.py  "Art Bronson" 		     6701906386 $1 $2
+python3 utep_pubs_per_month.py  "Barry Benedict" 	     35935955400 $1 $2
+python3 utep_pubs_per_month.py  "Louis Everett" 	     7005688173 $1 $2
+python3 utep_pubs_per_month.py  "Ryan Wicker" 		     7006119492 $1 $2
+python3 utep_pubs_per_month.py  "Evgeny Shafirovich" 	     6603935157 $1 $2
+python3 utep_pubs_per_month.py  "C. V. Ramana" 		     56760502000 $1 $2
+python3 utep_pubs_per_month.py  "Yirong Lin" 		     23489586800 $1 $2
+python3 utep_pubs_per_month.py  "Vinod Kumar" 		     55513286600 $1 $2
+python3 utep_pubs_per_month.py  "Frank Medina" 		     7101954500 $1 $2
+python3 utep_pubs_per_month.py  "David Espalin"		     36058705800 $1 $2
+python3 utep_pubs_per_month.py  "Amelia Greig" 		     53263561400 $1 $2
+python3 utep_pubs_per_month.py  "Alejandra Castellanos"      56903709100 $1 $2
+python3 utep_pubs_per_month.py  "Angel Flores" 		     35317228700 $1 $2
+python3 utep_pubs_per_month.py  "John Bird" 		     56045305200 $1 $2
+python3 utep_pubs_per_month.py  "Joel Quintana"		     56192315000 $1 $2
+python3 utep_pubs_per_month.py  "Armanj Hasanyan" 	     56543811300 $1 $2
+python3 utep_pubs_per_month.py  "Afroza Shirin" 	     57193884855 $1 $2
+python3 utep_pubs_per_month.py  "Omar Cedillos" 	     56254607000 $1 $2
+python3 utep_pubs_per_month.py  "Arifur Khan" 		     27168707400 $1 $2
+python3 utep_pubs_per_month.py  "Eric MacDonald" 	     7102140646 $1 $2
+python3 utep_pubs_per_month.py  "Edel Arrieta" 		     57194686141 $1 $2
+
+echo Material Science, Metallurgy and Biomedical Engineering
+python3 utep_pubs_per_month.py  "Thomas Boland"		     7003642392 $1 $2
+python3 utep_pubs_per_month.py  "Ken Meissner" 		     35499721900 $1 $2
+python3 utep_pubs_per_month.py  "Devesh Misra" 		     57203083236 $1 $2
+python3 utep_pubs_per_month.py  "Shailendra Varma"	     7203030513 $1 $2
+python3 utep_pubs_per_month.py  "David Roberson" 	     36743691100 $1 $2
+python3 utep_pubs_per_month.py  "Stella Quiñones" 	     7004358709 $1 $2
+python3 utep_pubs_per_month.py  "Brian Schuster" 	     9044972900 $1 $2
+python3 utep_pubs_per_month.py  "Binata Joddar" 	     12239428500 $1 $2
+python3 utep_pubs_per_month.py  "Guikuan Yue" 		     55212426900 $1 $2
+python3 utep_pubs_per_month.py  "Silvia Natividad-Diaz"      57205329179 $1 $2
+python3 utep_pubs_per_month.py  "Wilson Poon" 		     56328692700 $1 $2
+python3 utep_pubs_per_month.py  "Stephen Stafford" 	     36778320300 $1 $2
+python3 utep_pubs_per_month.py  "Darren Cone" 		     36440894300 $1 $2
+
+
+echo Research Staff
+python3 utep_pubs_per_month.py  "Ubaldo Robles" 	     57200334042 $1 $2
+python3 utep_pubs_per_month.py "Eva Deemer" 		     36343469000 $1 $2
+python3 utep_pubs_per_month.py  "Ana Martinez Maciel" 	     57198919786 $1 $2
+python3 utep_pubs_per_month.py  "Alexis Maurel" 	     57204547659 $1 $2
+
+echo Doctoral Students
+python3 utep_pubs_per_month.py "Melchor-Lucero, Octavio"     6508134369 $1 $2
+python3 utep_pubs_per_month.py "Renova, Elvia"		     35776703900 $1 $2
+python3 utep_pubs_per_month.py "Lopez, Alexis"		     55502480700 $1 $2
+python3 utep_pubs_per_month.py "Cortez, Polette"	     55632741000 $1 $2
+python3 utep_pubs_per_month.py "Hernandez, Gustavo"	     56371008300 $1 $2
+python3 utep_pubs_per_month.py "Reza, Sayed Mohsin"	     56412544400 $1 $2
+python3 utep_pubs_per_month.py "Sanchez Zambrano, Cesar"     56478097800 $1 $2
+python3 utep_pubs_per_month.py "Sundin, Emma"		     56673932400 $1 $2
+python3 utep_pubs_per_month.py "Sandoval, Armando"	     56893264800 $1 $2
+python3 utep_pubs_per_month.py "Tai Ramirez, Wai Yan Elsa"   57162573700 $1 $2
+python3 utep_pubs_per_month.py "Gutierrez, Marcus"	     57192662508 $1 $2
+python3 utep_pubs_per_month.py "Mohajeri, Zahra"	     57194235108 $1 $2
+python3 utep_pubs_per_month.py "Bustamante, Edgar"	     57194408820 $1 $2
+python3 utep_pubs_per_month.py "Hassan, MD Sahid"	     57194768685 $1 $2
+python3 utep_pubs_per_month.py "De La Cruz, Alex"	     57197389835 $1 $2
+python3 utep_pubs_per_month.py "Martinez, Noel"		     57197833605 $1 $2
+python3 utep_pubs_per_month.py "Arif, Annatoma"		     57199685052 $1 $2
+python3 utep_pubs_per_month.py "Martinez, Manuel"	     57200538592 $1 $2
+python3 utep_pubs_per_month.py "Martinez Milian, Luis"	     57200684135 $1 $2
+python3 utep_pubs_per_month.py "Vargas Acosta, Raul"	     57201394728 $1 $2
+python3 utep_pubs_per_month.py "Bermudez Ayala, Diego"	     57201987395 $1 $2
+python3 utep_pubs_per_month.py "Zunnurain, Izaz"	     57202282637 $1 $2
+python3 utep_pubs_per_month.py "Perez Zamora, Jose"	     57202832075 $1 $2
+python3 utep_pubs_per_month.py "Lohani, Bhushan"	     57202854315 $1 $2
+python3 utep_pubs_per_month.py "Aldeghlawi, Maher"	     57203193166 $1 $2
+python3 utep_pubs_per_month.py "Farhan, Ahnaf"		     57203464836 $1 $2
+python3 utep_pubs_per_month.py "Rodriguez, Arturo"	     57204567971 $1 $2
+python3 utep_pubs_per_month.py "Nath, Anindita"		     57204671629 $1 $2
+python3 utep_pubs_per_month.py "Rodriguez Velasquez, Edgar"  57205649313 $1 $2
+python3 utep_pubs_per_month.py "Azfar, Talha"		     57207298976 $1 $2
+python3 utep_pubs_per_month.py "Furth, Michael"		     57208861964 $1 $2
+python3 utep_pubs_per_month.py "Malik, Adeel"		     57211215929 $1 $2
+python3 utep_pubs_per_month.py "Sanchez Escobar, Francelia"  57212021470 $1 $2
+python3 utep_pubs_per_month.py "Blazer, Dawn"		     57213065583 $1 $2
+python3 utep_pubs_per_month.py "Avila, Jose"		     57213479931 $1 $2
+python3 utep_pubs_per_month.py "Dominguez, Erick"	     57214089680 $1 $2
+python3 utep_pubs_per_month.py "Karimipour, Arash"	     57214475450 $1 $2
+python3 utep_pubs_per_month.py "Beizaei, Mahsa"		     57215822612 $1 $2
+python3 utep_pubs_per_month.py "Vargas, Ana"		     57215872840 $1 $2
+python3 utep_pubs_per_month.py "Montes Ramirez, Jean"	     57216540798 $1 $2
+python3 utep_pubs_per_month.py "Avila, Jonathan"	     57216785051 $1 $2
+python3 utep_pubs_per_month.py "Hossain, Sheikh Dobir"	     57218509192 $1 $2
+python3 utep_pubs_per_month.py "Cuevas, Raul"		     57219114552 $1 $2
+python3 utep_pubs_per_month.py "Reyes Munoz, Julio"	     57219223931 $1 $2
+python3 utep_pubs_per_month.py "Leyva Aranzabal, Alma"	     57219714426 $1 $2
+python3 utep_pubs_per_month.py "Hassan, Md Mahmudulla"	     57219832690 $1 $2
+python3 utep_pubs_per_month.py "Espitia, Jose"		     57220605230 $1 $2
+python3 utep_pubs_per_month.py "Word, Truman"		     57222015326 $1 $2
+python3 utep_pubs_per_month.py "Episcopo, Nathan"	     57224497983 $1 $2
+python3 utep_pubs_per_month.py "Marquez, Cory"		     57235471900 $1 $2
+python3 utep_pubs_per_month.py "Nalam, Paul"		     57270894200 $1 $2
+python3 utep_pubs_per_month.py "Marquez, Jesus"		     57278317100 $1 $2
+python3 utep_pubs_per_month.py "Sandoval, Laura"	     57289137400 $1 $2
+python3 utep_pubs_per_month.py "Adansi, Richard"	     57289137500 $1 $2
+python3 utep_pubs_per_month.py "Ingram, Naomi"		     57374417500 $1 $2
+python3 utep_pubs_per_month.py "Molina, Andre"		     57374417600 $1 $2
+python3 utep_pubs_per_month.py "Valenzuela, Steven"	     57429729200 $1 $2
+python3 utep_pubs_per_month.py "Rivas, Veronica"	     57442558900 $1 $2
+python3 utep_pubs_per_month.py "Newbolt, Travis"	     57446738800 $1 $2
+python3 utep_pubs_per_month.py "Robali, Antonio"	     57539518500 $1 $2
+python3 utep_pubs_per_month.py "Lozoya, Christian"	     57540383400 $1 $2
+python3 utep_pubs_per_month.py "Meza, Alberto"		     57540791200 $1 $2
+python3 utep_pubs_per_month.py "Carrillo, Catherine"	     57541121400 $1 $2
+python3 utep_pubs_per_month.py "Valdez, Kevin"		     57541344100 $1 $2
+python3 utep_pubs_per_month.py "Rahman, Tahsin"		     57657382600 $1 $2
+python3 utep_pubs_per_month.py "Berrout Ramos, Laura"	     57721224800 $1 $2
+python3 utep_pubs_per_month.py "Ige, Tosin"		     57730188300 $1 $2
+python3 utep_pubs_per_month.py "Cruz, Hector"		     57759847400 $1 $2
+python3 utep_pubs_per_month.py "Loera, Emilio"		     57777338300 $1 $2
+python3 utep_pubs_per_month.py "Marfo, William"		     57823425400 $1 $2
+python3 utep_pubs_per_month.py "Arras, Benjamin"	     57872201700 $1 $2
+python3 utep_pubs_per_month.py "Rivas Escarcega, Jesus"	     57872355600 $1 $2
+python3 utep_pubs_per_month.py "Esparza, Aibhlin"	     57893282800 $1 $2
+python3 utep_pubs_per_month.py "Padilla, Andie"		     57894241900 $1 $2
+python3 utep_pubs_per_month.py "Chavez Lopez, Ana"	     57896160200 $1 $2
+python3 utep_pubs_per_month.py "Price, Ryan"		     57899563400 $1 $2
+python3 utep_pubs_per_month.py "Trujillo, Leslie"	     57942286000 $1 $2
+python3 utep_pubs_per_month.py "Acosta, Oscar"		     57958397800 $1 $2
+python3 utep_pubs_per_month.py "Beaven, Elfa"		     57996752900 $1 $2
+python3 utep_pubs_per_month.py "Castillo Fatule, Eduardo"    57230083900 $1 $2
+python3 utep_pubs_per_month.py "Cuvelier, Nora"		     57450543700 $1 $2
+python3 utep_pubs_per_month.py "Attarzadeh, Navid"	     24402762600 $1 $2
+python3 utep_pubs_per_month.py "Gomez, Sofia Gabriela"	     58070966200 $1 $2
