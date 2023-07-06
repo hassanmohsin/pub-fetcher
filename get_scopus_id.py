@@ -38,9 +38,22 @@ def get_scopus_id_by_info(row):
     if pd.notnull(row["SCOPUS ID"]):
         return row["SCOPUS ID"]
     else:
+        print(f"Getting SCOPUS ID for {row['Name']}", end=": ")
         last_name, first_name = row["Name"].split(",")
         scopus_id = get_scopus_id_by_name(client, last_name, first_name)
+        print(scopus_id)
         return scopus_id if scopus_id is not None else row["SCOPUS ID"]
+
+
+def get_scopus_ids(excel_file, output_file):
+    data = pd.ExcelFile(excel_file)
+    with pd.ExcelWriter(output_file, mode="w", engine="openpyxl") as writer:
+        for sheet_name in data.sheet_names:
+            print(f"Getting SCOPUS IDs for sheet {sheet_name}...")
+            df = data.parse(sheet_name)
+            df["SCOPUS ID"] = df.apply(get_scopus_id_by_info, axis=1)
+            if output_file is not None:
+                df.to_excel(writer, sheet_name=sheet_name, index=False)
 
 
 if __name__ == "__main__":
@@ -54,27 +67,8 @@ if __name__ == "__main__":
         "--output_file",
         type=str,
         required=True,
-        help="Output file (.csv) with authors and SCOPUS IDs",
-    )
-    parser.add_argument(
-        "--parallel", action="store_true", help="Use parallel processing"
+        help="Output file (.xlsx) with authors and SCOPUS IDs",
     )
     args = parser.parse_args()
 
-    # read all the sheets in the excel file
-    df = pd.read_excel(args.input_file, sheet_name=None, dtype={"Scopus ID": str})
-    # concatenate all the sheets into one dataframe
-    df = pd.concat(df.values(), ignore_index=True)
-    df.head()
-
-    print("Getting SCOPUS IDs for all authors...")
-    if args.parallel:
-        df["SCOPUS ID"] = df.swifter.progress_bar(True).apply(
-            get_scopus_id_by_info, axis=1
-        )
-    else:
-        tqdm.pandas()
-        df["SCOPUS ID"] = df.progress_apply(get_scopus_id_by_info, axis=1)
-
-    print("Saving to file...")
-    df.to_csv(args.output_file, index=False)
+    get_scopus_ids(args.input_file, args.output_file)
