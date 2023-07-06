@@ -5,4 +5,8 @@ dump.json
 temp.json
 data/
 logs/
-
+.vscode/
+*.csv
+*.json
+*.xlsx
+*.ipynb

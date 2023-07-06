@@ -121,3 +121,10 @@ def get_names_from_authors(authors: list):
     for author in authors:
         output.append(author["family"] + "," + author["given"])
     return output
+
+
+def load_authors():
+    students = pd.read_csv("./students.csv", dtype=str)
+    post_docs = pd.read_csv("./post_docs.csv", dtype=str)
+    professors = pd.read_csv("./professors.csv", dtype=str)
+    return pd.concat([students, post_docs, professors], ignore_index=True)
