@@ -48,12 +48,17 @@ def get_paper_from_search(result):
     # process the dict object and return a Paper object
     if "error" in result:
         return None
-    doi = result["prism:doi"]
-    title = result["dc:title"]
+    doi = result.get("prism:doi", "")
+    title = result.get("dc:title", "")
     authors = get_authors(doi)
-    year = result["prism:coverDate"].split("-")[0]
-    month = result["prism:coverDate"].split("-")[1]
-    citations = result["citedby-count"]
+    date = result.get("prism:coverDate", "")
+    if date != "":
+        year = date.split("-")[0]
+        month = date.split("-")[1]
+    else:
+        year = ""
+        month = ""
+    citations = result.get("citedby-count", 0)
     return Paper(doi, title, authors, year, month, citations)
 
 
