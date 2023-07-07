@@ -27,11 +27,8 @@ def get_search_result_by_month(
     client: ElsClient, scopus_id: str, year: str, month: str
 ):
     output = []
-    search_string = f"AU-ID({scopus_id}) AND PUBYEAR = {year}"
-    doc_srch = ElsSearch(search_string, "scopus")
-    doc_srch.execute(client, get_all=True)
 
-    for pub in doc_srch.results:
+    for pub in get_search_result_by_year(client, scopus_id, year):
         cover_date = pub.get("prism:coverDate", None)
         if cover_date is not None and cover_date.split("-")[1] == month:
             output.append(pub)
@@ -71,8 +68,10 @@ def get_author_names_from_doi(doi: str):
         output.append(author["family"] + "," + author["given"])
     return output
 
-
+# TODO: use get_coauthors_by_year
 def get_coauthors_by_month(client, scopus_id: str, year: str, month: str):
+    if scopus_id is None:
+        return []
     papers = get_search_result_by_month(client, scopus_id, year, month)
     dois = get_doi_from_papers(papers)
     coauthors = []
@@ -121,10 +120,3 @@ def get_names_from_authors(authors: list):
     for author in authors:
         output.append(author["family"] + "," + author["given"])
     return output
-
-
-def load_authors():
-    students = pd.read_csv("./students.csv", dtype=str)
-    post_docs = pd.read_csv("./post_docs.csv", dtype=str)
-    professors = pd.read_csv("./professors.csv", dtype=str)
-    return pd.concat([students, post_docs, professors], ignore_index=True)
