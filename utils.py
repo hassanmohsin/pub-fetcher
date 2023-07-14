@@ -3,6 +3,7 @@ import requests
 from elsapy.elssearch import ElsSearch
 from elsapy.elsclient import ElsClient
 import pandas as pd
+import time
 
 
 ## Load configuration
@@ -19,7 +20,15 @@ def get_search_result_by_year(client: ElsClient, scopus_id: str, year: str):
     search_string = f"AU-ID({scopus_id}) AND PUBYEAR = {year}"
     # print(search_string)
     doc_srch = ElsSearch(search_string, "scopus")
-    doc_srch.execute(client, get_all=True)
+    while True:
+        try:
+            doc_srch.execute(client, get_all=True)
+            break
+        except Exception as e:
+            print(e)
+            print("Retrying...")
+            time.sleep(5)
+    # doc_srch.execute(client, get_all=True)
     return doc_srch.results
 
 

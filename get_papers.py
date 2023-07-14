@@ -69,23 +69,23 @@ def author_list(paper):
     return author_list
 
 
-def author_to_text(author):
-    return f"{author['Name']} | {author['Program']} | {author['Email']}"
+def author_to_text(author, author_type="student"):
+    return f"{author['Name']}"# | {author['Program']} | {author['Email']}" if author_type == "student" else f"{author['Name']} | {author['Title'] | author['Department']}"
 
 
-def load_authors(input_file, type="student"):
+def load_authors(input_file, author_type="student"):
     # TODO: add post-docs
     """
     Load authors from an excel file
-    type: student or professor
+    author_type: student or professor
     """
-    if not type in ["student", "professor"]:
-        raise ValueError("type must be student or professor")
+    if not author_type in ["student", "professor"]:
+        raise ValueError("Author type must be student or professor")
 
     data = pd.ExcelFile(input_file)
     dfs = []
     for sheet_name in data.sheet_names:
-        if type in sheet_name.lower():
+        if author_type in sheet_name.lower():
             dfs.append(data.parse(sheet_name, converters={"SCOPUS ID": str}))
     return pd.concat(dfs)
 
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--output", type=str, required=True, help="Output file (.txt)")
     parser.add_argument(
-        "--type",
+        "--author_type",
         type=str,
         default="student",
         help="Type of author: student or professor",
@@ -114,17 +114,17 @@ if __name__ == "__main__":
     client.inst_token = config.insttoken
 
     # load authors
-    authors = load_authors(args.input, type=args.type)
+    authors = load_authors(args.input, author_type=args.author_type)
     with open(args.output, "w") as f:
         for row in tqdm(
             authors.iterrows(),
             total=len(authors),
-            desc=f"Retrieving papers of the {args.type.lower()}s...",
+            desc=f"Retrieving papers of the {args.author_type.lower()}s...",
         ):
             scopus_id = row[1]["SCOPUS ID"]
             if scopus_id is None:
                 continue
-            author_info = author_to_text(row[1])
+            author_info = author_to_text(row[1], author_type=args.author_type)
             search_result = get_search_result_by_year(client, scopus_id, year=args.year)
             papers = [get_paper_from_search(x) for x in search_result]
             papers = [x for x in papers if x is not None]
@@ -136,10 +136,15 @@ if __name__ == "__main__":
             if len(papers) == 0:
                 continue
             f.write(f"{author_info}\n")
+            citation_count = 0
+            content = ""
             for i, paper in enumerate(papers):
-                f.write(f"\t{i+1}. {paper.title}\n")
-                f.write(f"\t\t- Published: {paper.year}-{paper.month}\n")
-                f.write(f"\t\t- Authors: {'; '.join(author_list(paper))}\n")
-                f.write(f"\t\t- Citations: {paper.citations}\n")
-                f.write(f"\t\t- Link: {paper.url}\n")
+                content += f"\t{i+1}. {paper.title}\n"
+                content += f"\t\t- Published: {paper.year}-{paper.month}\n"
+                content += f"\t\t- Authors: {'; '.join(author_list(paper))}\n"
+                content += f"\t\t- Citations: {paper.citations}\n"
+                content += f"\t\t- Link: {paper.url} "
+                citation_count += int(paper.citations)
+            f.write(f"| (Total Publications: {len(papers)}, Total Citations: {citation_count}) \n")
+            f.write(content)
             f.write("\n")
