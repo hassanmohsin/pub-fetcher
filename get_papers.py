@@ -70,7 +70,7 @@ def author_list(paper):
 
 
 def author_to_text(author, author_type="student"):
-    return f"{author['Name']}"# | {author['Program']} | {author['Email']}" if author_type == "student" else f"{author['Name']} | {author['Title'] | author['Department']}"
+    return f"{author['Name']} | {author['Program']} | {author['Email']}" if author_type == "student" else f"{author['Name']} | {author['Title']} | {author['Department']}"
 
 
 def load_authors(input_file, author_type="student"):
@@ -135,7 +135,7 @@ if __name__ == "__main__":
                 papers = [x for x in papers if x.month == args.month]
             if len(papers) == 0:
                 continue
-            f.write(f"{author_info}\n")
+            f.write(f"{author_info} ")
             citation_count = 0
             content = ""
             for i, paper in enumerate(papers):
