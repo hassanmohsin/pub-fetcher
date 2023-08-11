@@ -2,9 +2,10 @@
 
 ## Set up
 
-- Set up a virtual environment: `python3 -m venv venv`
-- Activate the virtual environment: `source venv/bin/activate`
+- Set up a virtual environment: `python3 -m venv venv` or `python -m venv venv`
+- Activate the virtual environment: `source venv/bin/activate` (Linux) or `venv\Scripts\activate` (Windows)
 - Install dependencies: `pip install -r requirements.txt`
+- Rename the `config.json.example` file to `config.json` and fill in the values of `apikey` and `insttoken` with your own valuee. You can get them from [Elsevier Developer Portal](https://dev.elsevier.com/apikey/manage)
 
 ## Retrieve SCOPUS ID
 
