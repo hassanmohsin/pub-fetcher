@@ -25,7 +25,7 @@
 
   - `input`: path to the input file (`.xlsx`)
   - `output`: path to the output file (`.xlsx`)
-  - `author_type`: type of author. Can be `student` or `professor`
+  - `author_type`: type of author. Can be `student`, `post-doc` or `professor`
   - `month`: month of the year such as `01` or `06`
   - `year`: year such as `2020`
 

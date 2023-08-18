@@ -65,22 +65,26 @@ def get_paper_from_search(result):
 def author_list(paper):
     author_list = []
     for author in paper.authors:
-        author_list.append(author["family"] + ", " + author["given"])
+        author_list.append(author.get("family", "") + ", " + author.get("given", ""))
     return author_list
 
 
 def author_to_text(author, author_type="student"):
-    return f"{author['Name']} | {author['Program']} | {author['Email']}" if author_type == "student" else f"{author['Name']} | {author['Title']} | {author['Department']}"
+    if author_type == "student":
+        return f"{author.get('Name', '')} | {author.get('Program', '')} | {author.get('Email', '')}"
+    elif author_type == "professor":
+        return f"{author.get('Name', '')} | {author.get('Title', '')} | {author.get('Department', '')}"
+    elif author_type == "post-doc":
+        return f"{author.get('Name', '')} | {author.get('Department', '')}"
 
 
 def load_authors(input_file, author_type="student"):
-    # TODO: add post-docs
     """
     Load authors from an excel file
     author_type: student or professor
     """
-    if not author_type in ["student", "professor"]:
-        raise ValueError("Author type must be student or professor")
+    if not author_type in ["student", "professor", "post-doc"]:
+        raise ValueError("Author type must be student, post-doc or professor")
 
     data = pd.ExcelFile(input_file)
     dfs = []
@@ -102,7 +106,7 @@ if __name__ == "__main__":
         "--author_type",
         type=str,
         default="student",
-        help="Type of author: student or professor",
+        help="Type of author: student, post-doc or professor",
     )
     parser.add_argument("--month", type=str, help="Month of the year. e.g, 01, 02, ...")
     parser.add_argument("--year", type=str, help="Year. e.g, 2020")
@@ -143,8 +147,10 @@ if __name__ == "__main__":
                 content += f"\t\t- Published: {paper.year}-{paper.month}\n"
                 content += f"\t\t- Authors: {'; '.join(author_list(paper))}\n"
                 content += f"\t\t- Citations: {paper.citations}\n"
-                content += f"\t\t- Link: {paper.url} "
+                content += f"\t\t- Link: {paper.url} \n"
                 citation_count += int(paper.citations)
-            f.write(f"| (Total Publications: {len(papers)}, Total Citations: {citation_count}) \n")
+            f.write(
+                f"| (Total Publications: {len(papers)}, Total Citations: {citation_count}) \n"
+            )
             f.write(content)
             f.write("\n")

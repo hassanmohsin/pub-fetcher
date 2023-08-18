@@ -74,7 +74,7 @@ def get_author_names_from_doi(doi: str):
     authors = get_authors(doi)
     output = []
     for author in authors:
-        output.append(author["family"] + "," + author["given"])
+        output.append(author.get("family", "") + "," + author.get("given", ""))
     return output
 
 # TODO: use get_coauthors_by_year
@@ -119,7 +119,7 @@ def filter_by_student(coauthors: pd.Series, students: pd.DataFrame):
     # coauthors is a pd.Series of lists of coauthors for each author
     for coauthor_list in coauthors:
         for i, coauthor in enumerate(coauthor_list):
-            coauthor_name = coauthor["family"] + "," + coauthor["given"]
+            coauthor_name = coauthor.get("family", "") + "," + coauthor.get("given", "")
             if coauthor_name.lower() not in students:
                 coauthor_list.pop(i)
 
@@ -127,5 +127,5 @@ def filter_by_student(coauthors: pd.Series, students: pd.DataFrame):
 def get_names_from_authors(authors: list):
     output = []
     for author in authors:
-        output.append(author["family"] + "," + author["given"])
+        output.append(author.get("family", "") + "," + author.get("given", ""))
     return output
