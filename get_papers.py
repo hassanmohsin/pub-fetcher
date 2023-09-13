@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
     # load authors
     authors = load_authors(args.input, author_type=args.author_type)
-    with open(args.output, "w") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         for row in tqdm(
             authors.iterrows(),
             total=len(authors),
